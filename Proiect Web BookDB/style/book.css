@@ -1,0 +1,59 @@
+/* Main Container */
+.container {
+    max-width: 700px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    overflow: hidden;
+}
+
+/* Title Styling */
+h1 {
+    font-size: 2.2em;
+    color: #444;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Book Details */
+.container p {
+    font-size: 1.1em;
+    margin: 10px 0;
+    color: #555;
+}
+
+.container p strong {
+    color: #333;
+}
+
+/* Book Cover Image */
+.container img {
+    display: block;
+    max-width: 100%;
+    height: 620px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Wishlist Button */
+#wishlist-button {
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 20px 0;
+    background-color: #007bff;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#wishlist-button:hover {
+    background-color: #0056b3;
+}

@@ -1,0 +1,320 @@
+/* General reset for body and a consistent font */
+body,
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+}
+
+/* Navbar Styling */
+/* Stil pentru logo */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 15px 30px;
+}
+
+.logo a {
+    font-family: 'Arial', sans-serif; /* Alege un font potrivit pentru logo */
+    font-size: 2em; /* Marimile fontului pentru logo */
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 2px; /* Spațiere între litere */
+    text-transform: uppercase; /* Mărește impactul vizual */
+    transition: color 0.3s ease; /* Tranziție pentru hover */
+}
+
+.logo a:hover {
+    color: #ff6347; /* Culoare când treci cu mouse-ul pe logo */
+}
+
+/* Stil pentru meniu */
+nav a {
+    font-size: 1em;
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff6347; /* Culoare când treci cu mouse-ul pe meniu */
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 1.1em;
+    padding: 8px 12px;
+    transition: background-color 0.3s ease;
+}
+
+header a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+/* Main Title Styling */
+h2 {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 2em;
+    color: #444;
+    padding-top: 10px;
+}
+
+/* Filter Section */
+.filter-section {
+    text-align: center;
+    margin: 20px;
+}
+
+.filter-section select,
+.filter-section button {
+    padding: 10px;
+    margin: 5px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Grid Layout for Books */
+.book-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Book Card Styling */
+.book {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.book img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.book h3 {
+    font-size: 1.5em;
+    margin: 15px;
+    color: #333;
+}
+
+.book p {
+    margin: 10px 15px;
+    color: #666;
+    font-size: 0.95em;
+}
+
+.book .price {
+    font-weight: bold;
+    color: #007bff;
+    font-size: 1.2em;
+}
+
+/* Add footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 0.9em;
+}
+
+/* Add some responsiveness */
+@media (max-width: 768px) {
+    .book-list {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+}
+
+/* Links in Footer */
+footer a {
+    color: #007bff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    color: #0056b3;
+}
+
+/* Styling for the links in the header */
+header a {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+/* ------------------------- Account Page Styles ------------------------- */
+
+/* General reset for body and a consistent font */
+body,
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+    text-align: center; /* Centrare text pe orizontală */
+}
+
+/* Navbar Styling */
+header {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding-bottom: 10px;
+    z-index: 9999;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 1.1em;
+    padding: 8px 12px;
+    transition: background-color 0.3s ease;
+}
+
+header a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+/* Main Title Styling */
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #444;
+    margin-top: 40px;
+}
+
+/* Account Page Content */
+.account-info {
+    display: inline-block; /* Center the content */
+    text-align: left; /* Align text to the left inside the block */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    width: 60%; /* Optional: You can adjust the width to your preference */
+}
+
+.account-info p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+.account-info form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the form elements */
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.account-info input {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 70%;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.account-info button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.account-info button:hover {
+    background-color: #555;
+}
+
+/* Links at the bottom of the page */
+.account-info a {
+    color: #007bff;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.account-info a:hover {
+    color: #0056b3;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 0.9em;
+}
+
+/* Add some responsiveness */
+@media (max-width: 768px) {
+    .account-info {
+        width: 90%; /* Make the account info section responsive */
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+}
